@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breed Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐕 Breed Classifier</h1>
+        <div class="upload-area" id="upload-area">
+            <p>Drag & drop an image here or click to upload/capture</p>
+            <input type="file" id="file-input" accept="image/*" style="display: none;">
+            <button id="upload-btn">Upload Image</button>
+            <button id="capture-btn">Capture from Camera</button>
+        </div>
+        <img id="preview" alt="Image preview">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <div id="loading">Classifying...</div>
+        <div id="result">
+            <h3 id="breed-name">Breed: Loading...</h3>
+            <div id="confidence">Confidence: Loading...</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
