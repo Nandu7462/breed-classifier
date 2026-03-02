@@ -1,0 +1,15 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.container { background: white; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); max-width: 500px; width: 100%; padding: 40px; text-align: center; }
+h1 { color: #333; margin-bottom: 30px; font-size: 2em; }
+.upload-area { border: 3px dashed #667eea; border-radius: 15px; padding: 40px; margin-bottom: 20px; transition: all 0.3s ease; cursor: pointer; position: relative; background: #f8f9ff; }
+.upload-area:hover, .upload-area.dragover { border-color: #764ba2; background: #f0f2ff; transform: scale(1.02); }
+.upload-area.dragover::before { content: 'Drop the image here!'; position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: #764ba2; font-size: 1.2em; font-weight: bold; }
+#upload-btn, #capture-btn { background: #667eea; color: white; border: none; padding: 12px 24px; border-radius: 25px; font-size: 1em; cursor: pointer; margin: 10px; transition: background 0.3s; }
+#upload-btn:hover, #capture-btn:hover { background: #764ba2; }
+#preview { max-width: 100%; max-height: 250px; border-radius: 10px; margin: 20px 0; display: none; }
+#result { margin-top: 20px; padding: 20px; background: #e8f5e8; border-radius: 10px; display: none; }
+#result h3 { color: #28a745; margin-bottom: 10px; }
+#confidence { color: #666; font-size: 0.9em; }
+#loading { color: #667eea; font-style: italic; display: none; }
+video { max-width: 100%; max-height: 250px; display: none; }
